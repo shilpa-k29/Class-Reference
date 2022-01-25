@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--https://javascript.info/regexp-introduction-->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> Regular Expression Session 02</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    
+    <script>
+        "use strict";
+        
+        let str = "HARSHITA knows JAVASCRIPT very well, we can discuss some concepts with her";
+        
+        let result = str.match(/we/i); // without flag g
+        
+        alert( result[0] );     // We (1st match)
+        alert( result.length ); // 1
+        
+        // Details:
+        alert( result.index );  // 0 (position of the match)
+        alert( result.input );  // We will, we will rock you (source string)
+        </script>
+
+</body>
+</html>

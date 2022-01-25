@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--https://javascript.info/regexp-introduction-->
+<!--The method str.replace(regexp, replacement) replaces matches found using regexp in string str with replacement (all matches if there’s flag g, otherwise, only the first one).-->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Regular Expression 03 </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+</head>
+<body>
+    
+    <script>
+        "use strict";
+        
+        // no flag g
+        alert( "MCA Department from CHRIST UNIVERSITY - MCA is Technical".replace(/MCA/i, "MBA") ); // I will, we will
+        
+        // with flag g
+        alert( "MCA Department from CHRIST UNIVERSITY - MCA is Technical".replace(/MCA/ig, "MBA") ); // I will, I will
+        </script>
+
+</body>
+</html>

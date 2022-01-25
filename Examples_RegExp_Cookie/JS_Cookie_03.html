@@ -1,0 +1,40 @@
+<html>
+  <!--Example #3: Do something only once-->
+<head>  
+    
+<script>
+function doOnce() {
+  if (!document.cookie.split('; ').find(row => row.startsWith('doSomethingOnlyOnce'))) {
+
+    document.cookie = "doSomethingOnlyOnce=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; SameSite=None; Secure";
+
+    const output = document.getElementById('do-once')
+    output.textContent = '> Do something here!'
+  }
+}
+
+function clearOutputDoOnce() {
+  const output = document.getElementById('do-once')
+  output.textContent = ''
+}
+    </script>
+
+</head>
+<body>
+    <button onclick="doOnce()">Only do something once</button>
+
+<button onclick="clearOutputDoOnce()">
+  Clear
+</button>
+
+<div>
+  <code id="do-once"></code>
+</div>
+</button>
+
+<div>
+  <code id="cookies"></code>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--A character class is a special notation that matches any symbol from a certain set.-->
+<!-- Consider a practical task – we have a phone number like "+7(903)-123-45-67", and we need to turn it into pure numbers: 79031234567.-->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    
+    <script>
+        "use strict";
+        
+        let str = "+91(9000000099)";
+        
+        let regexp = /\d/g;
+        
+        alert( str.match(regexp) ); // array of matches: 0,0,0,0,0,0,0,0
+        
+        // let's make the digits-only phone number of them:
+        alert( str.match(regexp).join('') ); // It will show the complete joined number
+        </script>
+
+</body>
+</html>

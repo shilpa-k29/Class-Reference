@@ -1,0 +1,43 @@
+<html>
+  <!--Example #2: Get a sample cookie named test2-->
+<head>  
+    
+<script>
+   document.cookie = "test1=DEPARTMENT OF COMPUTER SCIENCE; SameSite=None; Secure";
+document.cookie = "test2=CHRIST UNIVERSITY; SameSite=None; Secure";
+
+const cookieValue = document.cookie
+  .split('; ')
+  .find(row => row.startsWith('test1='))
+  .split('=')[1];
+
+function showCookieValue() {
+  const output = document.getElementById('cookie-value')
+  output.textContent = '> ' + cookieValue
+}
+
+function clearOutputCookieValue() {
+  const output = document.getElementById('cookie-value')
+  output.textContent = ''
+}
+    </script>
+
+</head>
+<body>
+    <button onclick="showCookieValue()">Show cookie value</button>
+
+    <button onclick="clearOutputCookieValue()">
+      Clear
+    </button>
+    
+    <div>
+      <code id="cookie-value"></code>
+    </div>
+</button>
+
+<div>
+  <code id="cookies"></code>
+</div>
+</body>
+</html>
+
