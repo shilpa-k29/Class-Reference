@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!-- This is angularJS program for Initialization ARRAYS and usage of the same -->
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MSHiremath First Program</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <script src='angular.min.js'></script>
+</head>
+<body>
+    
+<H1> Program to demonstrate ANGULARJS ARAYS in Web Browser</H1>
+<hr>
+
+<div ng-app="" ng-init="values=[10,20,30,40,50,60,70,80,90,100]">
+    <p> The seleted value of the array is : {{ values[8] }} </p>
+
+    <p> The binding method <span ng-bind="values[8]"</span></p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+
+ANGULAR JS
+
+[1] It is a JAVASCRIPT Framework - It can be used in HTML with a <Script> tag.
+[2] This framework depends on MVC (Module View COntroller).
+[3] There Multiple advantages are there using MVC based JAVASCRIPT Frame work (ANgular JS)
+[4] Angular works with directives - 
+	(i) ng-app
+	(ii) ng-model
+	(iii) ng-bind
+	(iv) ng-init
+
+For expression we are using {{ ------ }}
+
+myCol = 'lightblue'
+
+
+ANgularJS Objects : These are same as Javascript Objects - we can create and call it / use it whenever needed in the program;
+
+AngularJS Expressions :
+--------------------------
+AngularJS expressions can be written inside double braces : {{ expression }}
+
+this can also be written as : ng-bind = " expression "
+
+Generally it resolves the expression and returns the value - where the angularjs expression is written.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
